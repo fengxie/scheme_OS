@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="5"
+   name=""
+   committed-date="2006-03-26T03:30:35.969641Z"
+   url="http://10.76.3.89/repos/scheme_OS-branch/kscm/bak"
+   last-author="keith"
+   kind="dir"
+   uuid="ed39bda6-dc0f-0410-a4f2-d0efc14c0fa0"
+   revision="42"/>
+<entry
+   committed-rev="5"
+   name="test.c"
+   text-time="2006-04-02T11:37:42.000000Z"
+   committed-date="2006-03-26T03:30:35.969641Z"
+   checksum="658cd5e84aeed2c500ec80a82bff6cb6"
+   last-author="keith"
+   kind="file"
+   prop-time="2006-04-02T11:37:42.000000Z"/>
+<entry
+   committed-rev="5"
+   name="scmyylex.h"
+   text-time="2006-04-02T11:37:42.000000Z"
+   committed-date="2006-03-26T03:30:35.969641Z"
+   checksum="e8a4f110dba8d852a6c5f0de3eb2f6ed"
+   last-author="keith"
+   kind="file"
+   prop-time="2006-04-02T11:37:42.000000Z"/>
+<entry
+   committed-rev="5"
+   name="lispm.c"
+   text-time="2006-04-02T11:37:42.000000Z"
+   committed-date="2006-03-26T03:30:35.969641Z"
+   checksum="e561cef3d86c25b0617ea43b5c581b96"
+   last-author="keith"
+   kind="file"
+   prop-time="2006-04-02T11:37:42.000000Z"/>
+<entry
+   committed-rev="5"
+   name="printk.c"
+   text-time="2006-04-02T11:37:42.000000Z"
+   committed-date="2006-03-26T03:30:35.969641Z"
+   checksum="e88e2a625bd1c82987d0466a00dcfb8b"
+   last-author="keith"
+   kind="file"
+   prop-time="2006-04-02T11:37:42.000000Z"/>
+<entry
+   committed-rev="5"
+   name="parse.c"
+   text-time="2006-04-02T11:37:42.000000Z"
+   committed-date="2006-03-26T03:30:35.969641Z"
+   checksum="c02d13fecd3ade706bf45bf016dadd10"
+   last-author="keith"
+   kind="file"
+   prop-time="2006-04-02T11:37:42.000000Z"/>
+<entry
+   committed-rev="5"
+   name="yylex.c"
+   text-time="2006-04-02T11:37:42.000000Z"
+   committed-date="2006-03-26T03:30:35.969641Z"
+   checksum="324b5a5a0ffc7a64215661bf0171834c"
+   last-author="keith"
+   kind="file"
+   prop-time="2006-04-02T11:37:42.000000Z"/>
+<entry
+   committed-rev="5"
+   name="lispm_mm.c"
+   text-time="2006-04-02T11:37:42.000000Z"
+   committed-date="2006-03-26T03:30:35.969641Z"
+   checksum="31f25eec490321b3ef8216eb364bc25d"
+   last-author="keith"
+   kind="file"
+   prop-time="2006-04-02T11:37:42.000000Z"/>
+</wc-entries>

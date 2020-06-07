@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="5"
+   name=""
+   committed-date="2006-03-26T03:30:35.969641Z"
+   url="http://10.76.3.89/repos/scheme_OS-branch/include"
+   last-author="keith"
+   kind="dir"
+   uuid="ed39bda6-dc0f-0410-a4f2-d0efc14c0fa0"
+   revision="42"/>
+<entry
+   name="asm"
+   kind="dir"/>
+<entry
+   name="scheme"
+   kind="dir"/>
+<entry
+   committed-rev="5"
+   name="semantic.cache"
+   text-time="2006-04-02T11:37:40.000000Z"
+   committed-date="2006-03-26T03:30:35.969641Z"
+   checksum="8186d53ce5af787c8f4755d256353357"
+   last-author="keith"
+   kind="file"
+   prop-time="2006-04-02T11:37:40.000000Z"/>
+<entry
+   committed-rev="5"
+   name="limits.h"
+   text-time="2006-04-02T11:37:40.000000Z"
+   committed-date="2006-03-26T03:30:35.969641Z"
+   checksum="65e405ab494a4365d4740daba91c9281"
+   last-author="keith"
+   kind="file"
+   prop-time="2006-04-02T11:37:40.000000Z"/>
+<entry
+   committed-rev="5"
+   name="stdlib.h"
+   text-time="2006-04-02T11:37:40.000000Z"
+   committed-date="2006-03-26T03:30:35.969641Z"
+   checksum="fe51a27f249b11a97c2233a17568ff13"
+   last-author="keith"
+   kind="file"
+   prop-time="2006-04-02T11:37:40.000000Z"/>
+<entry
+   committed-rev="5"
+   name="ansidecl.h"
+   text-time="2006-04-02T11:37:40.000000Z"
+   committed-date="2006-03-26T03:30:35.969641Z"
+   checksum="4365072ae519c4cb667f95512cab22c9"
+   last-author="keith"
+   kind="file"
+   prop-time="2006-04-02T11:37:40.000000Z"/>
+<entry
+   committed-rev="5"
+   name="stdio.h"
+   text-time="2006-04-02T11:37:40.000000Z"
+   committed-date="2006-03-26T03:30:35.969641Z"
+   checksum="2158bffb0a154d36db73cf2dd812a4a5"
+   last-author="keith"
+   kind="file"
+   prop-time="2006-04-02T11:37:40.000000Z"/>
+<entry
+   committed-rev="5"
+   name="ctype.h"
+   text-time="2006-04-02T11:37:40.000000Z"
+   committed-date="2006-03-26T03:30:35.969641Z"
+   checksum="f7a1a1a7f493d8274c2361b6207609f2"
+   last-author="keith"
+   kind="file"
+   prop-time="2006-04-02T11:37:40.000000Z"/>
+<entry
+   committed-rev="5"
+   name="stdarg.h"
+   text-time="2006-04-02T11:37:40.000000Z"
+   committed-date="2006-03-26T03:30:35.969641Z"
+   checksum="44e16690dde37e9d79d92ac2794154c9"
+   last-author="keith"
+   kind="file"
+   prop-time="2006-04-02T11:37:40.000000Z"/>
+<entry
+   committed-rev="5"
+   name="errno.h"
+   text-time="2006-04-02T11:37:40.000000Z"
+   committed-date="2006-03-26T03:30:35.969641Z"
+   checksum="4584481ee0ff097a72d1d5ed8cd3d5c7"
+   last-author="keith"
+   kind="file"
+   prop-time="2006-04-02T11:37:40.000000Z"/>
+<entry
+   committed-rev="5"
+   name="debug.h"
+   text-time="2006-04-02T11:37:40.000000Z"
+   committed-date="2006-03-26T03:30:35.969641Z"
+   checksum="d0805151f0f9f68b3f1fab091cd93b5d"
+   last-author="keith"
+   kind="file"
+   prop-time="2006-04-02T11:37:40.000000Z"/>
+<entry
+   committed-rev="5"
+   name="string.h"
+   text-time="2006-04-02T11:37:40.000000Z"
+   committed-date="2006-03-26T03:30:35.969641Z"
+   checksum="f785aedba74f31e89e50d97391956d49"
+   last-author="keith"
+   kind="file"
+   prop-time="2006-04-02T11:37:40.000000Z"/>
+<entry
+   name="kscm"
+   kind="dir"/>
+<entry
+   name="sys"
+   kind="dir"/>
+</wc-entries>

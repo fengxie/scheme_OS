@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="5"
+   name=""
+   committed-date="2006-03-26T03:30:35.969641Z"
+   url="http://10.76.3.89/repos/scheme_OS-branch/include/asm"
+   last-author="keith"
+   kind="dir"
+   uuid="ed39bda6-dc0f-0410-a4f2-d0efc14c0fa0"
+   revision="42"/>
+<entry
+   committed-rev="5"
+   name="page.h"
+   text-time="2006-04-02T11:37:39.000000Z"
+   committed-date="2006-03-26T03:30:35.969641Z"
+   checksum="ac9cf677fa7ef167e01a3ede0df5dad3"
+   last-author="keith"
+   kind="file"
+   prop-time="2006-04-02T11:37:39.000000Z"/>
+<entry
+   committed-rev="5"
+   name="inth.S"
+   text-time="2006-04-02T11:37:39.000000Z"
+   committed-date="2006-03-26T03:30:35.969641Z"
+   checksum="19f59605d8fc711e2b7d8022cf072905"
+   last-author="keith"
+   kind="file"
+   prop-time="2006-04-02T11:37:39.000000Z"/>
+<entry
+   committed-rev="5"
+   name="semantic.cache"
+   text-time="2006-04-02T11:37:39.000000Z"
+   committed-date="2006-03-26T03:30:35.969641Z"
+   checksum="55d75744d799d692c9e66e62b110bcba"
+   last-author="keith"
+   kind="file"
+   prop-time="2006-04-02T11:37:39.000000Z"/>
+<entry
+   committed-rev="5"
+   name="segment.h"
+   text-time="2006-04-02T11:37:39.000000Z"
+   committed-date="2006-03-26T03:30:35.969641Z"
+   checksum="83a1ba538311e722b65fb003aca3d924"
+   last-author="keith"
+   kind="file"
+   prop-time="2006-04-02T11:37:39.000000Z"/>
+<entry
+   committed-rev="5"
+   name="system.h"
+   text-time="2006-04-02T11:37:39.000000Z"
+   committed-date="2006-03-26T03:30:35.969641Z"
+   checksum="ee5b2cba1e71ef9aacd70dd44e0feb6c"
+   last-author="keith"
+   kind="file"
+   prop-time="2006-04-02T11:37:39.000000Z"/>
+<entry
+   committed-rev="5"
+   name="io.h"
+   text-time="2006-04-02T11:37:39.000000Z"
+   committed-date="2006-03-26T03:30:35.969641Z"
+   checksum="cdf964a28f621e7feccc3ce7ac71ce31"
+   last-author="keith"
+   kind="file"
+   prop-time="2006-04-02T11:37:39.000000Z"/>
+</wc-entries>

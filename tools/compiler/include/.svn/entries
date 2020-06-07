@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="37"
+   name=""
+   committed-date="2006-04-24T00:24:05.286877Z"
+   url="http://10.76.3.89/repos/scheme_OS-branch/tools/compiler/include"
+   last-author="keith"
+   kind="dir"
+   uuid="ed39bda6-dc0f-0410-a4f2-d0efc14c0fa0"
+   revision="42"/>
+<entry
+   committed-rev="29"
+   name="gc.h"
+   text-time="2006-04-16T11:25:17.000000Z"
+   committed-date="2006-04-18T00:08:22.524323Z"
+   checksum="ecac485d9bb934a69a35c2469667ef66"
+   last-author="keith"
+   kind="file"
+   prop-time="2006-04-02T11:37:24.000000Z"/>
+<entry
+   committed-rev="5"
+   name="semantic.cache"
+   text-time="2006-04-02T11:37:24.000000Z"
+   committed-date="2006-03-26T03:30:35.969641Z"
+   checksum="cd34f5f49fbcd2c7eafd1490dcde5c6a"
+   last-author="keith"
+   kind="file"
+   prop-time="2006-04-02T11:37:24.000000Z"/>
+<entry
+   committed-rev="36"
+   name="scheme.h"
+   text-time="2006-04-23T08:24:16.000000Z"
+   committed-date="2006-04-23T08:58:34.713975Z"
+   checksum="de3f01a621d517b51634a648672530ec"
+   last-author="keith"
+   kind="file"
+   prop-time="2006-04-14T01:31:38.000000Z"/>
+<entry
+   committed-rev="5"
+   name="cc.h"
+   text-time="2006-04-02T11:37:24.000000Z"
+   committed-date="2006-03-26T03:30:35.969641Z"
+   checksum="cf85eae889b68ff7e3ad2adb95069a71"
+   last-author="keith"
+   kind="file"
+   prop-time="2006-04-02T11:37:24.000000Z"/>
+<entry
+   committed-rev="30"
+   name="svm.h"
+   text-time="2006-04-17T14:45:34.000000Z"
+   committed-date="2006-04-18T16:26:05.797358Z"
+   checksum="79705bf70adc6e15e0cac58a588adc86"
+   last-author="keith"
+   kind="file"
+   prop-time="2006-04-14T01:31:38.000000Z"/>
+<entry
+   committed-rev="36"
+   name="config.h"
+   text-time="2006-04-23T08:28:18.000000Z"
+   committed-date="2006-04-23T08:58:34.713975Z"
+   checksum="24222d62d9fc515ed6bd973245ca310c"
+   last-author="keith"
+   kind="file"/>
+<entry
+   committed-rev="37"
+   name="builtin.h"
+   text-time="2006-04-23T09:16:31.000000Z"
+   committed-date="2006-04-24T00:24:05.286877Z"
+   checksum="2d137a6a467c98c059f1eca78f82f906"
+   last-author="keith"
+   kind="file"
+   prop-time="2006-04-02T11:37:24.000000Z"/>
+<entry
+   committed-rev="31"
+   name="debug.h"
+   text-time="2006-04-18T10:51:41.000000Z"
+   committed-date="2006-04-19T15:54:27.439115Z"
+   checksum="498a04fd6a725b667a9268751bc1fd23"
+   last-author="keith"
+   kind="file"
+   prop-time="2006-04-02T11:37:24.000000Z"/>
+</wc-entries>

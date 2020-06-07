@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="40"
+   name=""
+   committed-date="2006-04-24T07:58:30.473362Z"
+   url="http://10.76.3.89/repos/scheme_OS-branch/tools"
+   last-author="keith"
+   kind="dir"
+   uuid="ed39bda6-dc0f-0410-a4f2-d0efc14c0fa0"
+   revision="42"/>
+<entry
+   name="compiler"
+   kind="dir"/>
+</wc-entries>

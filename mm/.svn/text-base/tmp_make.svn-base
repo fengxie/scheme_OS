@@ -1,0 +1,38 @@
+
+AS86    = as86 -0 -a
+LD86    = ld86 -0
+
+AR	= ar
+AS	= as
+LD	= ld
+LDFLAGS	= -s -x -Ttext 0x0
+CC	= gcc-3.4
+CFLAGS	= -Wall -O -fno-builtin -fstrength-reduce $(GCC_OPT) \
+	-finline-functions -nostdinc -I../include
+CPP	= cpp-3.4 -nostdinc -Iinclude
+
+.c.s:
+	$(CC) $(CFLAGS) \
+	-S -o $*.s $<
+.s.o:
+	$(AS) -c -o $*.o $<
+.c.o:
+	$(CC) $(CFLAGS) \
+	-c -o $*.o $<
+
+OBJS 	= memory.o 
+
+all: mm.o
+
+mm.o: $(OBJS)
+	$(LD) -r -o mm.o $(OBJS)
+
+clean:
+	rm -f core *.o *.a tmp_make keyboard.s boot/bootsect boot/setup \
+		boot/setup.s boot/bootsect.s boot/head.o
+	for i in *.c;do rm -f `basename $$i .c`.s;done
+
+dep:
+	sed '/\#\#\# Dependencies/q' < Makefile > tmp_make
+
+### Dependencies:

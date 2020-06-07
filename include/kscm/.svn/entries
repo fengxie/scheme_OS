@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="5"
+   name=""
+   committed-date="2006-03-26T03:30:35.969641Z"
+   url="http://10.76.3.89/repos/scheme_OS-branch/include/kscm"
+   last-author="keith"
+   kind="dir"
+   uuid="ed39bda6-dc0f-0410-a4f2-d0efc14c0fa0"
+   revision="42"/>
+<entry
+   committed-rev="5"
+   name="gc.h"
+   text-time="2006-04-02T11:37:40.000000Z"
+   committed-date="2006-03-26T03:30:35.969641Z"
+   checksum="b7734cde9ceab49b7c6578049c5cbc2f"
+   last-author="keith"
+   kind="file"
+   prop-time="2006-04-02T11:37:40.000000Z"/>
+<entry
+   committed-rev="5"
+   name="mm.h"
+   text-time="2006-04-02T11:37:40.000000Z"
+   committed-date="2006-03-26T03:30:35.969641Z"
+   checksum="748500f2ae0304ae6828b2e6b6dd37a2"
+   last-author="keith"
+   kind="file"
+   prop-time="2006-04-02T11:37:40.000000Z"/>
+<entry
+   committed-rev="5"
+   name="int.h"
+   text-time="2006-04-02T11:37:40.000000Z"
+   committed-date="2006-03-26T03:30:35.969641Z"
+   checksum="41a5aee7502a7aef46658ea6918e6e20"
+   last-author="keith"
+   kind="file"
+   prop-time="2006-04-02T11:37:40.000000Z"/>
+<entry
+   committed-rev="5"
+   name="semantic.cache"
+   text-time="2006-04-02T11:37:40.000000Z"
+   committed-date="2006-03-26T03:30:35.969641Z"
+   checksum="d63cc4f1e202b5646570249c562e0ae9"
+   last-author="keith"
+   kind="file"
+   prop-time="2006-04-02T11:37:40.000000Z"/>
+<entry
+   committed-rev="5"
+   name="proc.h"
+   text-time="2006-04-02T11:37:40.000000Z"
+   committed-date="2006-03-26T03:30:35.969641Z"
+   checksum="4df81762d2bebc1d19ce7cc0e3e87502"
+   last-author="keith"
+   kind="file"
+   prop-time="2006-04-02T11:37:40.000000Z"/>
+<entry
+   committed-rev="5"
+   name="config.h"
+   text-time="2006-04-02T11:37:40.000000Z"
+   committed-date="2006-03-26T03:30:35.969641Z"
+   checksum="9663545867b730cef405920bc5ad8d5a"
+   last-author="keith"
+   kind="file"
+   prop-time="2006-04-02T11:37:40.000000Z"/>
+<entry
+   name="bak"
+   kind="dir"/>
+</wc-entries>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="5"
+   name=""
+   committed-date="2006-03-26T03:30:35.969641Z"
+   url="http://10.76.3.89/repos/scheme_OS-branch/lib/bak"
+   last-author="keith"
+   kind="dir"
+   uuid="ed39bda6-dc0f-0410-a4f2-d0efc14c0fa0"
+   revision="42"/>
+<entry
+   committed-rev="5"
+   name="strtod.c"
+   text-time="2006-04-02T11:37:40.000000Z"
+   committed-date="2006-03-26T03:30:35.969641Z"
+   checksum="d4c908316f8c5d3100c6ea323532c794"
+   last-author="keith"
+   kind="file"
+   prop-time="2006-04-02T11:37:40.000000Z"/>
+<entry
+   committed-rev="5"
+   name="atof.c"
+   text-time="2006-04-02T11:37:40.000000Z"
+   committed-date="2006-03-26T03:30:35.969641Z"
+   checksum="743c47c6d62c18fc5e75cd0eb33afdbe"
+   last-author="keith"
+   kind="file"
+   prop-time="2006-04-02T11:37:40.000000Z"/>
+</wc-entries>

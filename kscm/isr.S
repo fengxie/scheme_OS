@@ -1,0 +1,2 @@
+
+#include <kscm/config.h>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="5"
+   name=""
+   committed-date="2006-03-26T03:30:35.969641Z"
+   url="http://10.76.3.89/repos/scheme_OS-branch/kscm/scheme/bak"
+   last-author="keith"
+   kind="dir"
+   uuid="ed39bda6-dc0f-0410-a4f2-d0efc14c0fa0"
+   revision="42"/>
+<entry
+   committed-rev="5"
+   name="sscan.c"
+   text-time="2006-04-02T11:37:41.000000Z"
+   committed-date="2006-03-26T03:30:35.969641Z"
+   checksum="78f4a936a555faa2644faf2462906a88"
+   last-author="keith"
+   kind="file"
+   prop-time="2006-04-02T11:37:41.000000Z"/>
+<entry
+   committed-rev="5"
+   name="sscan.h"
+   text-time="2006-04-02T11:37:41.000000Z"
+   committed-date="2006-03-26T03:30:35.969641Z"
+   checksum="64e1e6193bea9b8471f2083c3d7602e5"
+   last-author="keith"
+   kind="file"
+   prop-time="2006-04-02T11:37:41.000000Z"/>
+</wc-entries>

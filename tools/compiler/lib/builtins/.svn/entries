@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="39"
+   name=""
+   committed-date="2006-04-24T04:53:54.087420Z"
+   url="http://10.76.3.89/repos/scheme_OS-branch/tools/compiler/lib/builtins"
+   last-author="keith"
+   kind="dir"
+   uuid="ed39bda6-dc0f-0410-a4f2-d0efc14c0fa0"
+   revision="42"/>
+<entry
+   committed-rev="39"
+   name="builtin.c"
+   text-time="2006-04-24T04:55:37.000000Z"
+   committed-date="2006-04-24T04:53:54.087420Z"
+   checksum="a33415774ba9d7c30f48cbd32bd3fb60"
+   last-author="keith"
+   kind="file"
+   prop-time="2006-04-24T04:55:37.000000Z"/>
+<entry
+   committed-rev="39"
+   name="Makefile"
+   text-time="2006-04-24T04:55:37.000000Z"
+   committed-date="2006-04-24T04:53:54.087420Z"
+   checksum="985552379a0c5fb9118cd85439de54e1"
+   last-author="keith"
+   kind="file"
+   prop-time="2006-04-24T04:55:37.000000Z"/>
+<entry
+   committed-rev="39"
+   name="tmp_make"
+   text-time="2006-04-24T04:55:37.000000Z"
+   committed-date="2006-04-24T04:53:54.087420Z"
+   checksum="985552379a0c5fb9118cd85439de54e1"
+   last-author="keith"
+   kind="file"
+   prop-time="2006-04-24T04:55:37.000000Z"/>
+</wc-entries>
