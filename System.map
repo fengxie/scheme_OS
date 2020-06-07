@@ -117,7 +117,7 @@ LOAD mm/mm.o
  *(.plt)
  *(.iplt)
 
-.text           0x0000000000000000     0x793d
+.text           0x0000000000000000     0x7911
  *(.text.unlikely .text.*_unlikely)
  *(.text .stub .text.* .gnu.linkonce.t.*)
  .text          0x0000000000000000     0x30f2 boot/head.o
@@ -127,112 +127,108 @@ LOAD mm/mm.o
                 0x00000000000020fa                G_idt
                 0x00000000000028fa                G_gdt
  *fill*         0x00000000000030f2        0xe 90909090
- .text          0x0000000000003100     0x3df1 kscm/kscm.o
+ .text          0x0000000000003100     0x3ce1 kscm/kscm.o
                 0x0000000000003100                console_init
                 0x00000000000031c6                scroll_down
                 0x0000000000003249                console_print
                 0x000000000000336c                main
                 0x00000000000034f8                kscm_init_proc
-                0x0000000000003508                key_map
-                0x0000000000003569                shift_map
-                0x00000000000035ca                alt_map
-                0x0000000000003670                scheme_init_bool
-                0x00000000000038e6                scheme_alloc_string
-                0x0000000000003925                scheme_make_string
-                0x0000000000003b79                scheme_init_string
-                0x0000000000004019                scheme_make_pair
-                0x00000000000041b0                scheme_list_to_string
-                0x000000000000423f                scheme_init_list
-                0x0000000000004410                scheme_init_vector
-                0x0000000000004415                scheme_vector_to_string
-                0x000000000000448a                scheme_make_vector
-                0x0000000000004dbf                scheme_read
-                0x0000000000004df8                scheme_init_read
-                0x0000000000004f50                scheme_port_peek_char
-                0x0000000000004f6f                scheme_port_get_string
-                0x0000000000004ffd                scheme_port_get_char
-                0x000000000000511d                scheme_make_char_input_stream
-                0x000000000000514a                scheme_init_port
-                0x0000000000005340                _gcd
-                0x00000000000056b5                scheme_make_rational
-                0x000000000000570d                scheme_make_double_numb
-                0x000000000000574c                scheme_make_integer_numb
-                0x0000000000005772                scheme_init_number
-                0x0000000000005920                eval_stack_empty_p
-                0x0000000000005936                eval_stack_full_p
-                0x000000000000594b                eval_stack_pop_env
-                0x000000000000596e                eval_stack_push_env
-                0x000000000000599a                gc_alloc_nobj
-                0x000000000000599f                gc_collect_garbage
-                0x0000000000005a75                gc_alloc_obj
-                0x0000000000005aa3                scheme_init_gc
-                0x0000000000005b40                scheme_make_symbol
-                0x0000000000005c83                scheme_init_symbol
-                0x0000000000005d50                scheme_obj_to_string
-                0x0000000000005f70                scheme_lookup_var
-                0x0000000000005fc6                scheme_set_var
-                0x000000000000602a                scheme_define_var
-                0x00000000000060da                scheme_register_primitive
-                0x0000000000006120                scheme_register_prims
-                0x0000000000006179                scheme_extend_env
-                0x0000000000006288                scheme_init_env
-                0x0000000000006380                scheme_init_proc
-                0x000000000000638e                scheme_make_procedure
-                0x00000000000063b9                scheme_apply_prim_proc
-                0x000000000000643f                scheme_make_prim_proc
-                0x000000000000646a                scheme_apply
-                0x0000000000006a6f                scheme_eval
-                0x0000000000006ae6                scheme_eval_sequence
-                0x0000000000006e88                scheme_driven_loop
-                0x0000000000006e8d                scheme_init
-                0x0000000000006eec                scheme_init_arch
- *fill*         0x0000000000006ef1        0xf 90909090
- .text          0x0000000000006f00      0x1bf lib/lib.a(number.o)
-                0x0000000000006f00                _itoa
-                0x0000000000006f08                _itoaU
-                0x0000000000007079                atol
-                0x000000000000709c                atoi
- *fill*         0x00000000000070bf        0x1 90909090
- .text          0x00000000000070c0      0x149 lib/lib.a(malloc.o)
-                0x00000000000070c0                kscm_init_heap
-                0x00000000000070eb                kfree
-                0x000000000000714f                alloc_memory
-                0x0000000000007154                kmalloc
- *fill*         0x0000000000007209        0x7 90909090
- .text          0x0000000000007210      0x198 lib/lib.a(strtol.o)
-                0x0000000000007210                strtol
- .text          0x00000000000073a8       0x34 lib/lib.a(string.o)
-                0x00000000000073a8                memset
- *fill*         0x00000000000073dc        0x4 90909090
- .text          0x00000000000073e0      0x19b lib/lib.a(print.o)
-                0x00000000000073e0                vsprintf
-                0x0000000000007523                sprintf
-                0x0000000000007544                printf
- *fill*         0x000000000000757b        0x1 90909090
- .text          0x000000000000757c        0x0 lib/lib.a(errno.o)
- *fill*         0x000000000000757c        0x4 90909090
- .text          0x0000000000007580      0x3bd mm/mm.o
-                0x0000000000007598                get_free_frame
-                0x0000000000007619                free_frame
-                0x000000000000763f                put_page
-                0x0000000000007707                kscm_init_paging
-                0x0000000000007885                expand_region
+                0x0000000000003560                scheme_init_bool
+                0x00000000000037d6                scheme_alloc_string
+                0x0000000000003815                scheme_make_string
+                0x0000000000003a69                scheme_init_string
+                0x0000000000003f09                scheme_make_pair
+                0x00000000000040a0                scheme_list_to_string
+                0x000000000000412f                scheme_init_list
+                0x0000000000004300                scheme_init_vector
+                0x0000000000004305                scheme_vector_to_string
+                0x000000000000437a                scheme_make_vector
+                0x0000000000004caf                scheme_read
+                0x0000000000004ce8                scheme_init_read
+                0x0000000000004e40                scheme_port_peek_char
+                0x0000000000004e5f                scheme_port_get_string
+                0x0000000000004eed                scheme_port_get_char
+                0x000000000000500d                scheme_make_char_input_stream
+                0x000000000000503a                scheme_init_port
+                0x0000000000005230                _gcd
+                0x00000000000055a5                scheme_make_rational
+                0x00000000000055fd                scheme_make_double_numb
+                0x000000000000563c                scheme_make_integer_numb
+                0x0000000000005662                scheme_init_number
+                0x0000000000005810                eval_stack_empty_p
+                0x0000000000005826                eval_stack_full_p
+                0x000000000000583b                eval_stack_pop_env
+                0x000000000000585e                eval_stack_push_env
+                0x000000000000588a                gc_alloc_nobj
+                0x000000000000588f                gc_collect_garbage
+                0x0000000000005965                gc_alloc_obj
+                0x0000000000005993                scheme_init_gc
+                0x0000000000005a30                scheme_make_symbol
+                0x0000000000005b73                scheme_init_symbol
+                0x0000000000005c40                scheme_obj_to_string
+                0x0000000000005e60                scheme_lookup_var
+                0x0000000000005eb6                scheme_set_var
+                0x0000000000005f1a                scheme_define_var
+                0x0000000000005fca                scheme_register_primitive
+                0x0000000000006010                scheme_register_prims
+                0x0000000000006069                scheme_extend_env
+                0x0000000000006178                scheme_init_env
+                0x0000000000006270                scheme_init_proc
+                0x000000000000627e                scheme_make_procedure
+                0x00000000000062a9                scheme_apply_prim_proc
+                0x000000000000632f                scheme_make_prim_proc
+                0x000000000000635a                scheme_apply
+                0x000000000000695f                scheme_eval
+                0x00000000000069d6                scheme_eval_sequence
+                0x0000000000006d78                scheme_driven_loop
+                0x0000000000006d7d                scheme_init
+                0x0000000000006ddc                scheme_init_arch
+ *fill*         0x0000000000006de1        0xf 90909090
+ .text          0x0000000000006df0      0x1bf lib/lib.a(number.o)
+                0x0000000000006df0                _itoa
+                0x0000000000006df8                _itoaU
+                0x0000000000006f69                atol
+                0x0000000000006f8c                atoi
+ *fill*         0x0000000000006faf        0x1 90909090
+ .text          0x0000000000006fb0      0x149 lib/lib.a(malloc.o)
+                0x0000000000006fb0                kscm_init_heap
+                0x0000000000006fdb                kfree
+                0x000000000000703f                alloc_memory
+                0x0000000000007044                kmalloc
+ *fill*         0x00000000000070f9        0x7 90909090
+ .text          0x0000000000007100      0x198 lib/lib.a(strtol.o)
+                0x0000000000007100                strtol
+ .text          0x0000000000007298       0x34 lib/lib.a(string.o)
+                0x0000000000007298                memset
+ *fill*         0x00000000000072cc        0x4 90909090
+ .text          0x00000000000072d0      0x19b lib/lib.a(print.o)
+                0x00000000000072d0                vsprintf
+                0x0000000000007413                sprintf
+                0x0000000000007434                printf
+ *fill*         0x000000000000746b        0x1 90909090
+ .text          0x000000000000746c        0x0 lib/lib.a(errno.o)
+ .text          0x000000000000746c      0x4a5 mm/mm.o
+                0x000000000000746c                kscm_init_paging
+                0x00000000000075f5                get_free_frame
+                0x0000000000007662                free_frame
+                0x0000000000007689                put_page
+                0x00000000000077c4                expand_region
  *(.gnu.warning)
 
 .fini
  *(.fini)
-                0x000000000000793d                PROVIDE (__etext, .)
-                0x000000000000793d                PROVIDE (_etext, .)
-                0x000000000000793d                PROVIDE (etext, .)
+                0x0000000000007911                PROVIDE (__etext, .)
+                0x0000000000007911                PROVIDE (_etext, .)
+                0x0000000000007911                PROVIDE (etext, .)
 
-.rodata         0x0000000000007940      0x871
+.rodata         0x0000000000007920      0x871
  *(.rodata .rodata.* .gnu.linkonce.r.*)
- .rodata        0x0000000000007940      0x340 kscm/kscm.o
+ .rodata        0x0000000000007920      0x340 kscm/kscm.o
  .rodata.str1.1
-                0x0000000000007c80      0x4b3 kscm/kscm.o
- *fill*         0x0000000000008133        0x1 00
+                0x0000000000007c60      0x4b3 kscm/kscm.o
+ *fill*         0x0000000000008113        0x1 00
  .rodata.str1.4
-                0x0000000000008134       0x7d kscm/kscm.o
+                0x0000000000008114       0x7d kscm/kscm.o
 
 .rodata1
  *(.rodata1)
@@ -245,8 +241,8 @@ LOAD mm/mm.o
 
 .gcc_except_table
  *(.gcc_except_table .gcc_except_table.*)
-                0x00000000000081b1                . = (ALIGN (0x1000) - ((0x1000 - .) & 0xfff))
-                0x00000000000091b1                . = (0x1000 DATA_SEGMENT_ALIGN 0x1000)
+                0x0000000000008191                . = (ALIGN (0x1000) - ((0x1000 - .) & 0xfff))
+                0x0000000000009191                . = (0x1000 DATA_SEGMENT_ALIGN 0x1000)
 
 .eh_frame
  *(.eh_frame)
@@ -261,22 +257,22 @@ LOAD mm/mm.o
  *(.tbss .tbss.* .gnu.linkonce.tb.*)
  *(.tcommon)
 
-.preinit_array  0x00000000000091b1        0x0
-                0x00000000000091b1                PROVIDE (__preinit_array_start, .)
+.preinit_array  0x0000000000009191        0x0
+                0x0000000000009191                PROVIDE (__preinit_array_start, .)
  *(.preinit_array)
-                0x00000000000091b1                PROVIDE (__preinit_array_end, .)
+                0x0000000000009191                PROVIDE (__preinit_array_end, .)
 
-.init_array     0x00000000000091b1        0x0
-                0x00000000000091b1                PROVIDE (__init_array_start, .)
+.init_array     0x0000000000009191        0x0
+                0x0000000000009191                PROVIDE (__init_array_start, .)
  *(SORT(.init_array.*))
  *(.init_array)
-                0x00000000000091b1                PROVIDE (__init_array_end, .)
+                0x0000000000009191                PROVIDE (__init_array_end, .)
 
-.fini_array     0x00000000000091b1        0x0
-                0x00000000000091b1                PROVIDE (__fini_array_start, .)
+.fini_array     0x0000000000009191        0x0
+                0x0000000000009191                PROVIDE (__fini_array_start, .)
  *(.fini_array)
  *(SORT(.fini_array.*))
-                0x00000000000091b1                PROVIDE (__fini_array_end, .)
+                0x0000000000009191                PROVIDE (__fini_array_end, .)
 
 .ctors
  *crtbegin.o(.ctors)
@@ -305,75 +301,75 @@ LOAD mm/mm.o
 .got
  *(.got)
  *(.igot)
-                0x00000000000091b1                . = (. DATA_SEGMENT_RELRO_END 0xc)
+                0x0000000000009191                . = (. DATA_SEGMENT_RELRO_END 0xc)
 
 .got.plt
  *(.got.plt)
  *(.igot.plt)
 
-.data           0x00000000000091c0      0x4bc
+.data           0x00000000000091a0      0x4bc
  *(.data .data.* .gnu.linkonce.d.*)
- .data          0x00000000000091c0        0x0 boot/head.o
- .data          0x00000000000091c0      0x470 kscm/kscm.o
-                0x00000000000091c0                string_funcs
-                0x0000000000009340                list_funcs
-                0x0000000000009400                read_funcs
-                0x0000000000009460                numb_funcs
-                0x0000000000009520                symbol_funcs
-                0x0000000000009560                proc_funcs
-                0x0000000000009580                eval_funcs
-                0x00000000000095a0                _analyze_funcs_
- .data          0x0000000000009630        0x0 lib/lib.a(number.o)
- .data          0x0000000000009630        0x0 lib/lib.a(malloc.o)
- .data          0x0000000000009630        0x0 lib/lib.a(strtol.o)
- .data          0x0000000000009630        0x0 lib/lib.a(string.o)
- .data          0x0000000000009630        0x0 lib/lib.a(print.o)
- .data          0x0000000000009630        0x0 lib/lib.a(errno.o)
- *fill*         0x0000000000009630       0x10 00
- .data          0x0000000000009640       0x3c mm/mm.o
-                0x0000000000009640                kscm_kernel_mm
+ .data          0x00000000000091a0        0x0 boot/head.o
+ .data          0x00000000000091a0      0x470 kscm/kscm.o
+                0x00000000000091a0                string_funcs
+                0x0000000000009320                list_funcs
+                0x00000000000093e0                read_funcs
+                0x0000000000009440                numb_funcs
+                0x0000000000009500                symbol_funcs
+                0x0000000000009540                proc_funcs
+                0x0000000000009560                eval_funcs
+                0x0000000000009580                _analyze_funcs_
+ .data          0x0000000000009610        0x0 lib/lib.a(number.o)
+ .data          0x0000000000009610        0x0 lib/lib.a(malloc.o)
+ .data          0x0000000000009610        0x0 lib/lib.a(strtol.o)
+ .data          0x0000000000009610        0x0 lib/lib.a(string.o)
+ .data          0x0000000000009610        0x0 lib/lib.a(print.o)
+ .data          0x0000000000009610        0x0 lib/lib.a(errno.o)
+ *fill*         0x0000000000009610       0x10 00
+ .data          0x0000000000009620       0x3c mm/mm.o
+                0x0000000000009620                kscm_kernel_mm
 
 .data1
  *(.data1)
-                0x000000000000967c                _edata = .
-                0x000000000000967c                PROVIDE (edata, .)
-                0x000000000000967c                __bss_start = .
+                0x000000000000965c                _edata = .
+                0x000000000000965c                PROVIDE (edata, .)
+                0x000000000000965c                __bss_start = .
 
-.bss            0x0000000000009680   0x123868
+.bss            0x0000000000009660   0x123868
  *(.dynbss)
  *(.bss .bss.* .gnu.linkonce.b.*)
- .bss           0x0000000000009680        0x0 boot/head.o
- .bss           0x0000000000009680   0x112488 kscm/kscm.o
- .bss           0x000000000011bb08        0x0 lib/lib.a(number.o)
- .bss           0x000000000011bb08        0x8 lib/lib.a(malloc.o)
- .bss           0x000000000011bb10        0x0 lib/lib.a(strtol.o)
- .bss           0x000000000011bb10        0x0 lib/lib.a(string.o)
- *fill*         0x000000000011bb10       0x10 00
- .bss           0x000000000011bb20      0x400 lib/lib.a(print.o)
- .bss           0x000000000011bf20        0x0 lib/lib.a(errno.o)
- .bss           0x000000000011bf20     0xff20 mm/mm.o
+ .bss           0x0000000000009660        0x0 boot/head.o
+ .bss           0x0000000000009660   0x112488 kscm/kscm.o
+ .bss           0x000000000011bae8        0x0 lib/lib.a(number.o)
+ .bss           0x000000000011bae8        0x8 lib/lib.a(malloc.o)
+ .bss           0x000000000011baf0        0x0 lib/lib.a(strtol.o)
+ .bss           0x000000000011baf0        0x0 lib/lib.a(string.o)
+ *fill*         0x000000000011baf0       0x10 00
+ .bss           0x000000000011bb00      0x400 lib/lib.a(print.o)
+ .bss           0x000000000011bf00        0x0 lib/lib.a(errno.o)
+ .bss           0x000000000011bf00     0xff20 mm/mm.o
  *(COMMON)
- COMMON         0x000000000012be40     0x10a4 kscm/kscm.o
-                0x000000000012be40                kscm_kernel
-                0x000000000012be44                scheme_current_environment
-                0x000000000012be48                scheme_current_input_port
-                0x000000000012be60                _HTable_
-                0x000000000012ce7c                kscm_current_proc
-                0x000000000012ce80                scheme_void
-                0x000000000012ce90                scheme_null
-                0x000000000012cea0                scheme_eof
-                0x000000000012ceb0                scheme_global_environment
-                0x000000000012cec0                scheme_false
-                0x000000000012ced0                scheme_current_output_port
-                0x000000000012ced4                scheme_true
- COMMON         0x000000000012cee4        0x4 lib/lib.a(errno.o)
-                0x000000000012cee4                errno
-                0x000000000012cee8                . = ALIGN ((. != 0x0)?0x4:0x1)
-                0x000000000012cee8                . = ALIGN (0x4)
-                0x000000000012cee8                . = ALIGN (0x4)
-                0x000000000012cee8                _end = .
-                0x000000000012cee8                PROVIDE (end, .)
-                0x000000000012cee8                . = DATA_SEGMENT_END (.)
+ COMMON         0x000000000012be20     0x10a4 kscm/kscm.o
+                0x000000000012be20                kscm_kernel
+                0x000000000012be24                scheme_current_environment
+                0x000000000012be28                scheme_current_input_port
+                0x000000000012be40                _HTable_
+                0x000000000012ce5c                kscm_current_proc
+                0x000000000012ce60                scheme_void
+                0x000000000012ce70                scheme_null
+                0x000000000012ce80                scheme_eof
+                0x000000000012ce90                scheme_global_environment
+                0x000000000012cea0                scheme_false
+                0x000000000012ceb0                scheme_current_output_port
+                0x000000000012ceb4                scheme_true
+ COMMON         0x000000000012cec4        0x4 lib/lib.a(errno.o)
+                0x000000000012cec4                errno
+                0x000000000012cec8                . = ALIGN ((. != 0x0)?0x4:0x1)
+                0x000000000012cec8                . = ALIGN (0x4)
+                0x000000000012cec8                . = ALIGN (0x4)
+                0x000000000012cec8                _end = .
+                0x000000000012cec8                PROVIDE (end, .)
+                0x000000000012cec8                . = DATA_SEGMENT_END (.)
 
 .stab
  *(.stab)
@@ -393,7 +389,7 @@ LOAD mm/mm.o
 .stab.indexstr
  *(.stab.indexstr)
 
-.comment        0x0000000000000000      0x2f2
+.comment        0x0000000000000000      0x2e7
  *(.comment)
  .comment       0x0000000000000000      0x227 kscm/kscm.o
  .comment       0x0000000000000227       0x1d lib/lib.a(number.o)
@@ -402,7 +398,7 @@ LOAD mm/mm.o
  .comment       0x000000000000027e       0x1d lib/lib.a(string.o)
  .comment       0x000000000000029b       0x1d lib/lib.a(print.o)
  .comment       0x00000000000002b8       0x1d lib/lib.a(errno.o)
- .comment       0x00000000000002d5       0x1d mm/mm.o
+ .comment       0x00000000000002d5       0x12 mm/mm.o
 
 .debug
  *(.debug)

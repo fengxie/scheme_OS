@@ -12,7 +12,7 @@ GCC_OPT =
 CFLAGS	= -Wall -O -fno-builtin -fstrength-reduce \
 	$(GCC_OPT) $(GCC_DEF) \
 	-finline-functions -nostdinc -I../../include -I.
-CPP	= gcc -E -nostdinc -I../../include 
+CPP	= gcc -E -nostdinc -I../../include
 # CFLAGS	= -Wall -finline-functions \
 # 	$(GCC_OPT) $(GCC_DEF) -g -DTEST_SCHEME
 # CPP	= $(CC) $(GCC_DEF) -E -DTEST_SCHEME
@@ -52,58 +52,58 @@ dep:
 
 ### Dependencies:
 arch.s arch.o: arch.c arch.h ../../include/asm/system.h ../../include/asm/io.h \
- ../../include/sys/types.h scheme.h ../../include/stdlib.h \
- ../../include/errno.h numb.h ../../include/kscm/mm.h \
- ../../include/kscm/config.h
+  ../../include/sys/types.h ./scheme.h ../../include/stdlib.h \
+  ../../include/errno.h numb.h scheme.h ../../include/kscm/mm.h
 bool.s bool.o: bool.c bool.h scheme.h ../../include/stdlib.h \
- ../../include/sys/types.h ../../include/errno.h salloc.h env.h
+  ../../include/sys/types.h ../../include/errno.h salloc.h env.h
 core.s core.o: core.c scheme.h ../../include/stdlib.h ../../include/sys/types.h \
- ../../include/errno.h env.h read.h port.h bool.h numb.h sstring.h list.h \
- eval.h display.h
+  ../../include/errno.h env.h read.h port.h bool.h numb.h sstring.h \
+  list.h eval.h display.h
 display.s display.o: display.c display.h scheme.h ../../include/stdlib.h \
- ../../include/sys/types.h ../../include/errno.h list.h vector.h \
- sstring.h ../../include/stdio.h ../../include/stdarg.h \
- ../../include/string.h ../../include/ctype.h
+  ../../include/sys/types.h ../../include/errno.h list.h vector.h \
+  sstring.h ../../include/stdio.h ../../include/stdarg.h \
+  ../../include/string.h ../../include/ctype.h
 env.s env.o: env.c env.h scheme.h ../../include/stdlib.h \
- ../../include/sys/types.h ../../include/errno.h salloc.h list.h symbol.h \
- proc.h ../../include/stdio.h ../../include/stdarg.h \
- ../../include/string.h ../../include/ctype.h
+  ../../include/sys/types.h ../../include/errno.h salloc.h list.h \
+  symbol.h proc.h ../../include/stdio.h ../../include/stdarg.h \
+  ../../include/string.h ../../include/ctype.h
 eval.s eval.o: eval.c eval.h scheme.h ../../include/stdlib.h \
- ../../include/sys/types.h ../../include/errno.h salloc.h list.h env.h \
- proc.h ../../include/stdio.h ../../include/stdarg.h
+  ../../include/sys/types.h ../../include/errno.h salloc.h list.h env.h \
+  proc.h ../../include/stdio.h ../../include/stdarg.h
 gc.s gc.o: gc.c gc.h scheme.h ../../include/stdlib.h ../../include/sys/types.h \
- ../../include/errno.h ../../include/kscm/config.h \
- ../../include/kscm/mm.h
+  ../../include/errno.h ../../include/kscm/config.h \
+  ../../include/kscm/mm.h
 hash.s hash.o: hash.c hash.h scheme.h ../../include/stdlib.h \
- ../../include/sys/types.h ../../include/errno.h salloc.h \
- ../../include/stdio.h ../../include/stdarg.h
+  ../../include/sys/types.h ../../include/errno.h salloc.h \
+  ../../include/stdio.h ../../include/stdarg.h
 list.s list.o: list.c list.h scheme.h ../../include/stdlib.h \
- ../../include/sys/types.h ../../include/errno.h env.h salloc.h display.h
+  ../../include/sys/types.h ../../include/errno.h env.h salloc.h \
+  display.h
 numb.s numb.o: numb.c numb.h scheme.h ../../include/stdlib.h \
- ../../include/sys/types.h ../../include/errno.h salloc.h env.h \
- ../../include/stdio.h ../../include/stdarg.h
+  ../../include/sys/types.h ../../include/errno.h salloc.h env.h \
+  ../../include/stdio.h ../../include/stdarg.h
 port.s port.o: port.c port.h scheme.h ../../include/stdlib.h \
- ../../include/sys/types.h ../../include/errno.h salloc.h env.h symbol.h \
- ../../include/asm/system.h ../../include/asm/io.h ../../include/stdio.h \
- ../../include/stdarg.h
+  ../../include/sys/types.h ../../include/errno.h salloc.h env.h symbol.h \
+  ../../include/asm/system.h ../../include/asm/io.h ../../include/stdio.h \
+  ../../include/stdarg.h
 proc.s proc.o: proc.c proc.h scheme.h ../../include/stdlib.h \
- ../../include/sys/types.h ../../include/errno.h eval.h salloc.h list.h \
- env.h ../../include/stdio.h ../../include/stdarg.h
+  ../../include/sys/types.h ../../include/errno.h eval.h salloc.h list.h \
+  env.h ../../include/stdio.h ../../include/stdarg.h
 read.s read.o: read.c read.h scheme.h ../../include/stdlib.h \
- ../../include/sys/types.h ../../include/errno.h env.h salloc.h list.h \
- port.h syylex.h symbol.h numb.h sstring.h ../../include/stdio.h \
- ../../include/stdarg.h ../../include/string.h ../../include/ctype.h
+  ../../include/sys/types.h ../../include/errno.h env.h salloc.h list.h \
+  port.h syylex.h symbol.h numb.h sstring.h ../../include/stdio.h \
+  ../../include/stdarg.h ../../include/string.h ../../include/ctype.h
 salloc.s salloc.o: salloc.c salloc.h scheme.h ../../include/stdlib.h \
- ../../include/sys/types.h ../../include/errno.h
+  ../../include/sys/types.h ../../include/errno.h
 sstring.s sstring.o: sstring.c sstring.h scheme.h ../../include/stdlib.h \
- ../../include/sys/types.h ../../include/errno.h env.h salloc.h \
- ../../include/string.h ../../include/ctype.h
+  ../../include/sys/types.h ../../include/errno.h env.h salloc.h \
+  ../../include/string.h ../../include/ctype.h
 symbol.s symbol.o: symbol.c symbol.h scheme.h ../../include/stdlib.h \
- ../../include/sys/types.h ../../include/errno.h salloc.h sstring.h \
- hash.h ../../include/string.h ../../include/ctype.h
+  ../../include/sys/types.h ../../include/errno.h salloc.h sstring.h \
+  hash.h ../../include/string.h ../../include/ctype.h
 test.s test.o: test.c scheme.h ../../include/stdlib.h ../../include/sys/types.h \
- ../../include/errno.h salloc.h port.h sstring.h bool.h numb.h read.h \
- syylex.h display.h eval.h hash.h env.h ../../include/stdio.h \
- ../../include/stdarg.h ../../include/ctype.h
+  ../../include/errno.h salloc.h port.h sstring.h bool.h numb.h read.h \
+  syylex.h display.h eval.h hash.h env.h ../../include/stdio.h \
+  ../../include/stdarg.h ../../include/ctype.h
 vector.s vector.o: vector.c vector.h scheme.h ../../include/stdlib.h \
- ../../include/sys/types.h ../../include/errno.h salloc.h display.h
+  ../../include/sys/types.h ../../include/errno.h salloc.h display.h

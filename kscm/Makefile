@@ -47,14 +47,14 @@ dep:
 
 ### Dependencies:
 console.s console.o: console.c ../include/kscm/config.h ../include/stdlib.h \
- ../include/sys/types.h ../include/errno.h ../include/string.h \
- ../include/ctype.h
+  ../include/sys/types.h ../include/errno.h ../include/string.h \
+  ../include/ctype.h
 proc.s proc.o: proc.c ../include/kscm/config.h ../include/kscm/proc.h \
- ../include/kscm/mm.h ../include/sys/types.h
+  ../include/kscm/mm.h ../include/sys/types.h
 start.s start.o: start.c ../include/kscm/config.h ../include/asm/page.h \
- ../include/sys/types.h ../include/asm/system.h ../include/asm/io.h \
- ../include/kscm/mm.h ../include/kscm/proc.h ../include/debug.h \
- ../include/stdio.h ../include/stdarg.h ../include/stdlib.h \
- ../include/errno.h ../include/ctype.h ../include/string.h \
- scheme/scheme.h scheme/read.h scheme/scheme.h scheme/env.h \
- scheme/display.h scheme/port.h scheme/eval.h
+  ../include/sys/types.h ../include/asm/system.h ../include/asm/io.h \
+  ../include/kscm/mm.h ../include/kscm/proc.h ../include/debug.h \
+  ../include/stdio.h ../include/stdarg.h ../include/stdlib.h \
+  ../include/errno.h ../include/ctype.h ../include/string.h \
+  scheme/scheme.h scheme/read.h scheme/scheme.h scheme/env.h \
+  scheme/display.h scheme/port.h scheme/eval.h

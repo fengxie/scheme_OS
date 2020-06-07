@@ -1,0 +1,15 @@
+
+o [keith] new parser(SCM_Parser.hs) by using parsec (60%)
+
+   - support for define-syntax
+
+   - support for more number types to fulfill r5rs standard
+
+o [keith] implementation for `define-syntax'
+
+   - add test cases for current uncompleted version
+
+   - add support for pattern with ellipsis and template expansion with ellipsis
+
+* support for new standard r6rs
+

@@ -30,14 +30,14 @@ SUBDIRS = builtins
 LIBS = libscheme.a
 OBJS = svm.o gc.o scheme.o builtins/builtins.o
 
-TSTS = tst_svm test
+TSTS = 
 
 all: libscheme.a $(TSTS)
 
-.PHONY : builtins/builtins.o
-
 libscheme.a: $(OBJS)
 	$(AR) cr $*.a $(OBJS)
+
+.PHONY : builtins/builtins.o
 
 builtins/builtins.o :
 	make -C builtins
@@ -74,75 +74,59 @@ dep:
 
 ### Dependencies:
 gc.s gc.o: gc.c ../include/gc.h ../include/scheme.h /usr/include/sys/types.h \
-  /usr/include/features.h /usr/include/sys/cdefs.h \
-  /usr/include/gnu/stubs.h /usr/include/bits/types.h \
-  /usr/include/bits/wordsize.h \
-  /usr/lib/gcc/i486-linux-gnu/3.4.6/include/stddef.h \
-  /usr/include/bits/typesizes.h /usr/include/time.h /usr/include/endian.h \
-  /usr/include/bits/endian.h /usr/include/sys/select.h \
-  /usr/include/bits/select.h /usr/include/bits/sigset.h \
-  /usr/include/bits/time.h /usr/include/sys/sysmacros.h \
-  /usr/include/bits/pthreadtypes.h /usr/include/bits/sched.h \
-  ../include/cc.h ../include/svm.h /usr/include/assert.h \
-  /usr/include/stdlib.h /usr/include/alloca.h
+ /usr/include/features.h /usr/include/bits/predefs.h \
+ /usr/include/sys/cdefs.h /usr/include/bits/wordsize.h \
+ /usr/include/gnu/stubs.h /usr/include/gnu/stubs-32.h \
+ /usr/include/bits/types.h /usr/include/bits/typesizes.h \
+ /usr/include/time.h /usr/lib/gcc/i486-linux-gnu/4.4.5/include/stddef.h \
+ /usr/include/endian.h /usr/include/bits/endian.h \
+ /usr/include/bits/byteswap.h /usr/include/sys/select.h \
+ /usr/include/bits/select.h /usr/include/bits/sigset.h \
+ /usr/include/bits/time.h /usr/include/sys/sysmacros.h \
+ /usr/include/bits/pthreadtypes.h ../include/cc.h ../include/svm.h \
+ /usr/include/assert.h /usr/include/stdlib.h /usr/include/alloca.h
 scheme.s scheme.o: scheme.c ../include/scheme.h /usr/include/sys/types.h \
-  /usr/include/features.h /usr/include/sys/cdefs.h \
-  /usr/include/gnu/stubs.h /usr/include/bits/types.h \
-  /usr/include/bits/wordsize.h \
-  /usr/lib/gcc/i486-linux-gnu/3.4.6/include/stddef.h \
-  /usr/include/bits/typesizes.h /usr/include/time.h /usr/include/endian.h \
-  /usr/include/bits/endian.h /usr/include/sys/select.h \
-  /usr/include/bits/select.h /usr/include/bits/sigset.h \
-  /usr/include/bits/time.h /usr/include/sys/sysmacros.h \
-  /usr/include/bits/pthreadtypes.h /usr/include/bits/sched.h \
-  ../include/svm.h /usr/include/assert.h ../include/cc.h ../include/gc.h \
-  /usr/include/stdlib.h /usr/include/alloca.h
+ /usr/include/features.h /usr/include/bits/predefs.h \
+ /usr/include/sys/cdefs.h /usr/include/bits/wordsize.h \
+ /usr/include/gnu/stubs.h /usr/include/gnu/stubs-32.h \
+ /usr/include/bits/types.h /usr/include/bits/typesizes.h \
+ /usr/include/time.h /usr/lib/gcc/i486-linux-gnu/4.4.5/include/stddef.h \
+ /usr/include/endian.h /usr/include/bits/endian.h \
+ /usr/include/bits/byteswap.h /usr/include/sys/select.h \
+ /usr/include/bits/select.h /usr/include/bits/sigset.h \
+ /usr/include/bits/time.h /usr/include/sys/sysmacros.h \
+ /usr/include/bits/pthreadtypes.h ../include/svm.h /usr/include/assert.h \
+ ../include/cc.h ../include/gc.h /usr/include/stdlib.h \
+ /usr/include/alloca.h
 svm.s svm.o: svm.c ../include/svm.h ../include/scheme.h \
-  /usr/include/sys/types.h /usr/include/features.h \
-  /usr/include/sys/cdefs.h /usr/include/gnu/stubs.h \
-  /usr/include/bits/types.h /usr/include/bits/wordsize.h \
-  /usr/lib/gcc/i486-linux-gnu/3.4.6/include/stddef.h \
-  /usr/include/bits/typesizes.h /usr/include/time.h /usr/include/endian.h \
-  /usr/include/bits/endian.h /usr/include/sys/select.h \
-  /usr/include/bits/select.h /usr/include/bits/sigset.h \
-  /usr/include/bits/time.h /usr/include/sys/sysmacros.h \
-  /usr/include/bits/pthreadtypes.h /usr/include/bits/sched.h \
-  /usr/include/assert.h ../include/cc.h ../include/gc.h \
-  /usr/include/stdio.h /usr/include/libio.h /usr/include/_G_config.h \
-  /usr/include/wchar.h /usr/include/bits/wchar.h /usr/include/gconv.h \
-  /usr/lib/gcc/i486-linux-gnu/3.4.6/include/stdarg.h \
-  /usr/include/bits/stdio_lim.h /usr/include/bits/sys_errlist.h \
-  /usr/include/stdlib.h /usr/include/alloca.h
-test.s test.o: test.c ../include/svm.h ../include/scheme.h \
-  /usr/include/sys/types.h /usr/include/features.h \
-  /usr/include/sys/cdefs.h /usr/include/gnu/stubs.h \
-  /usr/include/bits/types.h /usr/include/bits/wordsize.h \
-  /usr/lib/gcc/i486-linux-gnu/3.4.6/include/stddef.h \
-  /usr/include/bits/typesizes.h /usr/include/time.h /usr/include/endian.h \
-  /usr/include/bits/endian.h /usr/include/sys/select.h \
-  /usr/include/bits/select.h /usr/include/bits/sigset.h \
-  /usr/include/bits/time.h /usr/include/sys/sysmacros.h \
-  /usr/include/bits/pthreadtypes.h /usr/include/bits/sched.h \
-  /usr/include/assert.h ../include/cc.h ../include/gc.h \
-  ../include/builtin.h ../include/config.h ../include/debug.h \
-  /usr/include/stdio.h /usr/include/libio.h /usr/include/_G_config.h \
-  /usr/include/wchar.h /usr/include/bits/wchar.h /usr/include/gconv.h \
-  /usr/lib/gcc/i486-linux-gnu/3.4.6/include/stdarg.h \
-  /usr/include/bits/stdio_lim.h /usr/include/bits/sys_errlist.h \
-  /usr/include/stdlib.h /usr/include/alloca.h
+ /usr/include/sys/types.h /usr/include/features.h \
+ /usr/include/bits/predefs.h /usr/include/sys/cdefs.h \
+ /usr/include/bits/wordsize.h /usr/include/gnu/stubs.h \
+ /usr/include/gnu/stubs-32.h /usr/include/bits/types.h \
+ /usr/include/bits/typesizes.h /usr/include/time.h \
+ /usr/lib/gcc/i486-linux-gnu/4.4.5/include/stddef.h /usr/include/endian.h \
+ /usr/include/bits/endian.h /usr/include/bits/byteswap.h \
+ /usr/include/sys/select.h /usr/include/bits/select.h \
+ /usr/include/bits/sigset.h /usr/include/bits/time.h \
+ /usr/include/sys/sysmacros.h /usr/include/bits/pthreadtypes.h \
+ /usr/include/assert.h ../include/cc.h ../include/gc.h \
+ /usr/include/stdio.h /usr/include/libio.h /usr/include/_G_config.h \
+ /usr/include/wchar.h /usr/lib/gcc/i486-linux-gnu/4.4.5/include/stdarg.h \
+ /usr/include/bits/stdio_lim.h /usr/include/bits/sys_errlist.h \
+ /usr/include/stdlib.h /usr/include/alloca.h
 tst_svm.s tst_svm.o: tst_svm.c ../include/svm.h ../include/scheme.h \
-  /usr/include/sys/types.h /usr/include/features.h \
-  /usr/include/sys/cdefs.h /usr/include/gnu/stubs.h \
-  /usr/include/bits/types.h /usr/include/bits/wordsize.h \
-  /usr/lib/gcc/i486-linux-gnu/3.4.6/include/stddef.h \
-  /usr/include/bits/typesizes.h /usr/include/time.h /usr/include/endian.h \
-  /usr/include/bits/endian.h /usr/include/sys/select.h \
-  /usr/include/bits/select.h /usr/include/bits/sigset.h \
-  /usr/include/bits/time.h /usr/include/sys/sysmacros.h \
-  /usr/include/bits/pthreadtypes.h /usr/include/bits/sched.h \
-  /usr/include/assert.h ../include/cc.h ../include/gc.h \
-  /usr/include/stdio.h /usr/include/libio.h /usr/include/_G_config.h \
-  /usr/include/wchar.h /usr/include/bits/wchar.h /usr/include/gconv.h \
-  /usr/lib/gcc/i486-linux-gnu/3.4.6/include/stdarg.h \
-  /usr/include/bits/stdio_lim.h /usr/include/bits/sys_errlist.h \
-  /usr/include/stdlib.h /usr/include/alloca.h
+ /usr/include/sys/types.h /usr/include/features.h \
+ /usr/include/bits/predefs.h /usr/include/sys/cdefs.h \
+ /usr/include/bits/wordsize.h /usr/include/gnu/stubs.h \
+ /usr/include/gnu/stubs-32.h /usr/include/bits/types.h \
+ /usr/include/bits/typesizes.h /usr/include/time.h \
+ /usr/lib/gcc/i486-linux-gnu/4.4.5/include/stddef.h /usr/include/endian.h \
+ /usr/include/bits/endian.h /usr/include/bits/byteswap.h \
+ /usr/include/sys/select.h /usr/include/bits/select.h \
+ /usr/include/bits/sigset.h /usr/include/bits/time.h \
+ /usr/include/sys/sysmacros.h /usr/include/bits/pthreadtypes.h \
+ /usr/include/assert.h ../include/cc.h ../include/gc.h \
+ /usr/include/stdio.h /usr/include/libio.h /usr/include/_G_config.h \
+ /usr/include/wchar.h /usr/lib/gcc/i486-linux-gnu/4.4.5/include/stdarg.h \
+ /usr/include/bits/stdio_lim.h /usr/include/bits/sys_errlist.h \
+ /usr/include/stdlib.h /usr/include/alloca.h

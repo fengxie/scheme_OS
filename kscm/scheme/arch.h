@@ -39,7 +39,7 @@
 #include <sys/types.h>
 #endif
 
-#include "scheme.h"
+#include <scheme.h>
 
 enum Scheme_arch_types {
 	/* arch specifid types */

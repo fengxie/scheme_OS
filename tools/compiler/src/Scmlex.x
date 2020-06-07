@@ -1,11 +1,15 @@
 --
 -- Lexical syntax for Scheme(r5rs)
 --
+-- TODO:
+--   support floating point
+--   support R6RS
+--   
 
 {
-module Scmlex (Token(..), AlexPosn(..), alexScanTokens, getToken) where
+module Scmlex (Token(..), AlexPosn(..), scanTokens, getToken, getTokenPos) where
 
-import Char (toLower)
+import Data.Char (toLower)
 }
 
 %wrapper "posn"
@@ -191,6 +195,15 @@ data Token =
 
 getToken (Id _ s) = s
 
+alexPos2tuple (AlexPn cnt ln col) = (cnt, ln, col)
+
+getTokenPos = alexPos2tuple . getTokenPos'
+    where
+      getTokenPos' (Leftpar pos) = pos
+      getTokenPos' (Rightpar pos) = pos
+      getTokenPos' (Leftsharpar pos) = pos
+      getTokenPos' (Id pos _) = pos
+
 slice [] _ _ = []
 slice (x:xs) n m | m <= n = []
       	         | n > 0 = slice xs (n - 1) (m - 1)
@@ -201,4 +214,6 @@ getString s =
       convertStr [] = []
       convertStr (x:xs) | x == '\\' = (head xs) : convertStr (tail xs)
                         | otherwise = x: convertStr xs
+
+scanTokens = alexScanTokens
 }

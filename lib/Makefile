@@ -45,16 +45,16 @@ dep:
 ### Dependencies:
 errno.s errno.o: errno.c ../include/errno.h
 malloc.s malloc.o: malloc.c ../include/stdlib.h ../include/sys/types.h \
- ../include/errno.h ../include/stdio.h ../include/stdarg.h \
- ../include/kscm/mm.h ../include/kscm/config.h ../include/asm/page.h
+  ../include/errno.h ../include/stdio.h ../include/stdarg.h \
+  ../include/kscm/mm.h ../include/kscm/config.h ../include/asm/page.h
 number.s number.o: number.c ../include/kscm/config.h ../include/ansidecl.h \
- ../include/stdlib.h ../include/sys/types.h ../include/errno.h
+  ../include/stdlib.h ../include/sys/types.h ../include/errno.h
 print.s print.o: print.c ../include/stdio.h ../include/sys/types.h \
- ../include/stdarg.h ../include/stdlib.h ../include/errno.h \
- ../include/string.h ../include/ctype.h
+  ../include/stdarg.h ../include/stdlib.h ../include/errno.h \
+  ../include/string.h ../include/ctype.h
 string.s string.o: string.c ../include/string.h ../include/sys/types.h \
- ../include/ctype.h
+  ../include/ctype.h
 strtol.s strtol.o: strtol.c ../include/ctype.h ../include/limits.h \
- ../include/stdlib.h ../include/sys/types.h ../include/errno.h
+  ../include/stdlib.h ../include/sys/types.h ../include/errno.h
 tst_string.s tst_string.o: tst_string.c ../include/string.h ../include/sys/types.h \
- ../include/ctype.h
+  ../include/ctype.h
